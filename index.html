@@ -4,17 +4,21 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Blue Archive</title>  
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Shiroko.jpg" type="image/jpeg">
+    <link rel="manifest" href="manifest.json">
+
 </head>  
 
 <body>  
-    <video id="myVideo" src="blue_archive.mp4" class="background-video" autoplay muted></video>  
+    <video id="myVideo" src="blue_archive.mp4" class="background-video" autoplay muted></video> 
     <nav class="navigasi">
         <ul id="list-navigasi">
         <li><button type="button" id="volume-button">Unmute</button></li>
         <li><button id="button1" class="button1" type="button" onclick="blurBackground()">Blur background</button></li>
         </ul>
     </nav>
+        <button id="toggle-nav-button" type="button" onclick="toggleNavigation()">Hide</button>
     <main>  
         <section class="section1"> 
                 <img id="logo" src="Blue_Archive_EN_logo.svg.png" alt="logo" width="100px" height="fit-content">
@@ -23,11 +27,10 @@
                     <h3>Wellcome</h3>
                 </div>
                 <section class="link">
-                    <button type="button" onclick="openWeb()" id="button2"><p>Buka web</p></button>
+                    <button type="button" onclick="openWeb()" id="button2"><p>Open Webs</p></button>
                 </section>
         </section>  
         <section class="section2" id="section2">
-            
         </section>
     </main>  
     <script src="script.js"></script>  

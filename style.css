@@ -8,150 +8,195 @@
     top: 0;  
     bottom: 0;  
     z-index: -10;  
-    transition: filter 0.3s ease; /* Menambahkan transisi untuk efek blur */  
+    transition: filter 0.3s ease;  
 }  
 
 .background-video.active {  
-    filter: blur(5px); /* Menambahkan efek blur ketika kelas active ditambahkan */
-}
+    filter: blur(5px);  
+}  
 
-#button1 {
-    padding: 10px;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border: 1px solid white;
-    color: white;
-    transform: translateX(-50%);
-    transition: all 1s;
-}
+#button1 {  
+    height: 37px;  
+    max-height: 37px;  
+    background: transparent;  
+    backdrop-filter: blur(10px);  
+    border: 1px solid white;  
+    color: white;  
+    transform: translateX(-50%);  
+    transition: all 1s;  
+}  
 
-#button1:hover {
-    color: #3bbeff;
-    padding: 11px;
-    transition: all 1s;
-    border: 2px solid #3bbeff;
-}
+#button1:hover {  
+    color: #3bbeff;  
+    transition: all 1s;  
+    border: 2px solid #3bbeff;  
+}  
 
-.section1 {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid white;
-    padding: 20px;
-    backdrop-filter: blur(1px);
-    transition: all 1s;
-}
+.section1 {  
+    display: block;  
+    position: absolute;  
+    top: 40%;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    border: 1px solid white;  
+    padding: 20px;  
+    backdrop-filter: blur(1px);  
+    transition: all 1s;  
+}  
 
-.section1:hover {
-    padding: 200px;
-    padding-left: 230px;
-    padding-right: 230px;
-    top: 10%;
-    transition: all 1s;
-    backdrop-filter: blur(10px);
-}
+.section1:hover {  
+    padding: 200px;  
+    padding-left: 230px;  
+    padding-right: 230px;  
+    top: 10%;  
+    transition: all 1s;  
+    backdrop-filter: blur(10px);  
+}  
 
-#logo {
-    display: block;
-    transition: all 1s;
-}
+#logo {  
+    display: block;  
+    transition: all 1s;  
+}  
 
-.section1:hover img {
-   transform: translateY(-180px);
-   transition: all 1s;
-   width: 150px;
-}
+.section1:hover img {  
+   transform: translateY(-180px);  
+   transition: all 1s;  
+   width: 150px;  
+}  
 
-.section1 #title1 {
-    position: absolute;
+.section1 #title1 {  
+    position: absolute;  
     transition: opacity 0.5s ease, transform 0.5s ease;  
     opacity: 0;  
-    transition: all 0.5s;
-    top: 100px;
-    transform: translateX(20px);
-    color: white;
-    text-align: center;
-    font-family: comic sans MS;
-}
+    transition: all 0.5s;  
+    top: 100px;  
+    transform: translateX(20px);  
+    color: white;  
+    text-align: center;  
+    font-family: comic sans MS;  
+}  
 
-.section1:hover #title1 {
-    opacity: 1;
-    transition: all 1s;
-    top: 70px;
-    transform: translateX(30px);
-}
+.section1:hover #title1 {  
+    opacity: 1;  
+    transition: all 1s;  
+    top: 70px;  
+    transform: translateX(30px);  
+}  
 
-.section1.active {
-    display: none;
-}
+.section1.active {  
+    display: none;  
+}  
 
-#button2 {
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    position: absolute;
+#button2 {  
+    border: 1px solid white;  
+    background: transparent;  
+    color: white;  
+    position: absolute;  
     opacity: 0;  
-    transition: all 0.5s;
-    color: white;
-    text-align: center;
-    font-family: comic sans MS;
-    left: 10px;
-}
+    transition: all 0.5s;  
+    color: white;  
+    text-align: center;  
+    font-family: comic sans MS;  
+    left: 10px;  
+}  
 
-.section1:hover #button2 {
-    opacity: 1;
-    transition: all 1s;
-    left: 90px;
-}
+.section1:hover #button2 {  
+    opacity: 1;  
+    transition: all 1s;  
+    left: 90px;  
+}  
 
-#volume-button {
-    border: 1px solid white;
-    color: white;
-    padding: 10px;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    transform: translateX(-50%);
-    transition: all 1s;
-}
-
-.section2 {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid white;
-    padding: 20px;
-    backdrop-filter: blur(1px);
-    color: white;
-}
+#volume-button {  
+    border: 1px solid white;  
+    color: white;  
+    max-height: 37px;  
+    height: 37px;  
+    background: transparent;  
+    backdrop-filter: blur(10px);  
+    transform: translateX(-50%);  
+    transition: all 1s;  
+}  
 
 .section2 {  
-    display: block; /* Set initial display to block, we'll manage visibility with max-height */  
-    max-height: 0; /* Awalnya tidak ada tinggi */  
-    padding: 0; /* Padding awal */  
-    overflow: hidden; /* Sembunyikan apa pun yang melebihi max-height */  
-    opacity: 0; /* Opacity awal untuk efek transisi */  
-    transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease; /* Transisi untuk max-height, padding, dan opacity */  
+    display: none;  
+    position: absolute;  
+    top: 1%;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    border: 1px solid white;  
+    padding: 20px;  
+    backdrop-filter: blur(1px);  
+    color: white;  
+}  
+
+.section2 {  
+    display: block;  
+    height: 0;  
+    padding: 0;  
+    overflow: hidden;  
+    transition: height 1.5s ease, padding 1.5s ease, opacity 1.5s ease;  
 }  
 
 .section2.active {  
-    max-height: 100px; /* Set appropriate height when shown (adjust as needed) */  
-    padding-top: 1000px;
-    opacity: 1; /* Opacity saat ditampilkan */  
-}
+    height: 5000px;  
+    width: 99%;  
+    opacity: 1;  
+    backdrop-filter: blur(3px);  
+    box-shadow: 1px -1px 1px black;  
+    transition: height 2.5s ease, padding 1.5s ease, opacity 1.5s ease;  
+}  
 
-.navigasi {
-    position: fixed;
-    padding-right: 410px;
-    border: 1px  solid red;
-}
+.navigasi {  
+    position: fixed;  
+    padding-right: 1280px;  
+    margin-top: -5px;  
+    backdrop-filter: blur(1px);  
+    border: 1px solid white;  
+    border-radius: 2px;  
+    z-index: 1000;  
+    transition: all 1s;  
+}  
 
-#list-navigasi {
-    display: flex;
-    justify-items: center;
-    align-content: end;
-}
+#list-navigasi {  
+    display: flex;  
+    list-style-type: none;  
+}  
+
+#list-navigasi li .button1 {  
+    position: relative;  
+    left: 32px;  
+}   
+
+.navigasi.active {  
+    max-height: 5;  
+    transition: max-height 0.5s ease, 1s ease;  
+    margin-top: -300px;  
+}  
+
+#toggle-nav-button {  
+    border: 1px solid white;  
+    background: transparent;  
+    position: absolute;  
+    left: 17.2%;  
+    top: 2.6%;  
+    z-index: 1001;  
+    height: 37px;  
+    max-height: 37px;  
+    color: white;  
+    transition: left 1s ease, all 1s ease;  
+    position: fixed;  
+}  
+
+#toggle-nav-button.active {  
+    left: 1%;  
+    transition: left 1s ease, all 1s ease;  
+    position: fixed;  
+}  
+
+#button3 {  
+    background: transparent;  
+    color: white;  
+    border: 1px solid white;  
+    display: none;  
+}   
 
