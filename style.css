@@ -120,7 +120,7 @@
 .section2 {  
     display: none;  
     position: absolute;  
-    top: 1%;  
+    top: 10%;  
     left: 50%;  
     transform: translateX(-50%);  
     border: 1px solid white;  
@@ -142,13 +142,13 @@
     width: 99%;  
     opacity: 1;  
     backdrop-filter: blur(3px);  
-    box-shadow: 1px -1px 1px black;  
-    transition: height 2.5s ease, padding 1.5s ease, opacity 1.5s ease;  
+    box-shadow:-1px 1px -1px 10px white;  
+    transition: height 2.5s ease, width 1.5s ease, opacity 1.5s ease;  
 }  
 
 .navigasi {  
     position: fixed;  
-    padding-right: 1280px;  
+    width: 98.9%;
     margin-top: -5px;  
     backdrop-filter: blur(1px);  
     border: 1px solid white;  
@@ -196,7 +196,88 @@
 #button3 {  
     background: transparent;  
     color: white;  
-    border: 1px solid white;  
+    border: 1px solid white;
     display: none;  
-}   
+    position: absolute;  
+    top: 5%;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    border: 1px solid white;  
+    padding: 20px;  
+    backdrop-filter: blur(1px);  
+    color: white;  
+    transition: top 0.5s ease, opacity 0.5s ease; /* Tambahkan transisi untuk top dan opacity */  
+}
+.section2.active {  
+    display: block;  
+    opacity: 1;  
+    top: 10;
+    width: 99%;  
+    backdrop-filter: blur(3px);  
+    box-shadow: -1px 1px 1000px white;  
+    transition:  1s;
+}  
+.listweblink {
+    display: none;
+}
 
+.listweblink {
+    display: block;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 150px;
+    list-style: none;
+    display: grid;
+}
+
+.listweblink #link1 {
+    background: transparent;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid white;
+    width: 300px;
+    box-shadow: 1px -1px 10px white;
+}
+
+.listweblink #link1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.listweblink #link2 {
+    background: transparent;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid white;
+    width: 300px;
+    box-shadow: 1px -1px 10px white;
+}
+
+.listweblink #link2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.listweblink #link3 {
+    background: transparent;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid white;
+    width: 300px;
+    box-shadow: 1px -1px 10px white;
+}
+
+.listweblink #link3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.weblink.active {
+    display: block;
+}
+
+.listweblink img {
+    border: 2px solid white;
+}
